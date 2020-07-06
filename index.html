@@ -11,6 +11,9 @@
                 <div style="float: left;">
                     <span style="color: white; font-size: 50px; position:absolute;" id="progress">0/20</span>
                 </div>
+                <div style="float: right">
+                    <a style="color: black; font-size: 50px; background-color: white" href="helppage.html">?</a>
+                </div>
                 <img src="images/tupu-a-nuku.png" alt="get_a_better_browser/internet_so_this_image_loads.png" style="width: 60%;" id="starimages">
                 <br>
                 <button id="0" style="background-color: lightgrey;" onclick="select(0)">Tupuānuku</button>
@@ -99,7 +102,7 @@
                         }else{
                             grade = '<span style="color:red">needs significant work.</span>'
                         }
-                        document.getElementById("game").innerHTML = '<div style="width: 80%; background-color: white; padding: 20px; border: 2px outset black"> <h1>You win!</h1> <p>you got '+ percentcorrect +'% of questions correct!</p><p>your grade is:<strong>'+grade+'</strong></p><span style="font-size: small;">Jen Hay: Assistant artist, Director<br>Polly Haywood: Artist<br>Bob Haywood: Programmer, Website designer</span></div>'
+                        document.getElementById("game").innerHTML = '<div style="width: 80%; background-color: white; padding: 20px; border: 2px outset black"> <h1>You win!</h1> <p>you got '+ percentcorrect +'% of questions correct!</p><p>your grade is:<strong>'+grade+'</strong></p><span style="font-size: small;">Jen Hay: Assistant artist, Director<br>Polly Haywood: Artist<br>Bob Haywood: Programmer, Website designer</span><button href="/">replay</button></div>'
                     }
                 }else{
                     losses += 1
