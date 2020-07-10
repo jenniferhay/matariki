@@ -12,7 +12,7 @@
                     <span style="color: white; font-size: 50px; position:absolute;" id="progress">0/20</span>
                 </div>
                 <div style="float: right">
-                    <a style="color: black; font-size: 50px; background-color: white; text-decoration: none;" href="helppage.html">?</a>
+                    <a style="color: black; font-size: 50px; background-color: white" href="helppage.html">?</a>
                 </div>
                 <img src="images/tupu-a-nuku.png" alt="get_a_better_browser/internet_so_this_image_loads.png" style="width: 60%;" id="starimages">
                 <br>
@@ -20,10 +20,10 @@
                 <button id="1" style="background-color: lightgrey;" onclick="select(1)">Tupuārangi</button>
                 <button id="2" style="background-color: lightgrey;" onclick="select(2)">Waitī</button>
                 <button id="3" style="background-color: lightgrey;" onclick="select(3)">Waitā</button>
-                <button id="4" style="background-color: lightgrey;" onclick="select(4)">Waipuna-ā-Rangi</button>
-                <button id="5" style="background-color: lightgrey;" onclick="select(5)">Pahutakawa</button>
-                <button id="6" style="background-color: lightgrey;" onclick="select(6)">Hiwaitirangi</button>
-                <button id="7" style="background-color: lightgrey;" onclick="select(7)">matariki</button>
+                <button id="4" style="background-color: lightgrey;" onclick="select(4)">Waipunarangi</button>
+                <button id="5" style="background-color: lightgrey;" onclick="select(5)">Pōhutakawa</button>
+                <button id="6" style="background-color: lightgrey;" onclick="select(6)">Hiwa-i-te-rangi</button>
+                <button id="7" style="background-color: lightgrey;" onclick="select(7)">Matariki</button>
                 <button id="8" style="background-color: lightgrey;" onclick="select(8)">Ururangi</button>
                 <br>
                 <button style="width: 20%;" onclick="submit()" id="confirmbutton">submit</button>
@@ -39,7 +39,7 @@
             var losses = 0
             var devmode = false
             var buttonnumbers = 8 //the number of buttons there are
-            var buttonnames = ["Tupuānuku", "Tupuārangi", "Waitī", "Waitā", "Waipuna-ā-Rangi", "Pahutakawa","Hiwaitirangi", "matariki", "Ururangi"]
+            var buttonnames = ["Tupuānuku", "Tupuārangi", "Waitī", "Waitā", "Waipunarangi", "Pōhutakawa","Hiwa-i-te-rangi", "Matariki", "Ururangi"]
             var buttonimgs = ["images/veges.png", "images/bird.png", "images/river.png", "images/ocean.png", "images/rain.png", "images/death.png", "images/wind.png", "images/health.png", "images/dreams.png"]
             var starimgs = ["images/tupu-a-nuku.png", "images/tupu-a-rangi.png", "images/waiti.png", "images/waita.png", "images/waipuna-a-rangi.png", "images/pohutakawa.png", "images/hiwa-i-te-rangi.png", "images/matariki.png", "images/ururangi.png"]
             function clearButtonColors(){
@@ -92,17 +92,17 @@
                         var percentcorrect = String(Math.round((wins/(wins+losses))*100))
                         var grade
                         if(percentcorrect > 95){
-                            grade = '<span style="color:darkgreen">Amazing!</span>'
+                            grade = '<span style="color:darkgreen">Rawe!</span>'
                         }else if(percentcorrect > 75){
-                            grade = '<span style="color:green">Good!</span>'
+                            grade = '<span style="color:green">Tino pai!</span>'
                         }else if(percentcorrect > 50){
-                            grade = '<span style="color:darkseagreen">Not bad...</span>'
+                            grade = '<span style="color:darkseagreen">Pai...</span>'
                         }else if(percentcorrect > 10){
-                            grade = '<span style="color:orange">ok...</span>'
+                            grade = '<span style="color:orange">Āhua pai...</span>'
                         }else{
-                            grade = '<span style="color:red">needs significant work.</span>'
+                            grade = '<span style="color:red">Me ako anō.</span>'
                         }
-                        document.getElementById("game").innerHTML = '<div style="width: 80%; background-color: white; padding: 20px; border: 2px outset black"> <h1>You win!</h1> <p>you got '+ percentcorrect +'% of questions correct!</p><p>your grade is:<strong>'+grade+'</strong></p><span style="font-size: small;">Jen Hay: Assistant artist, Director<br>Polly Haywood: Artist<br>Bob Haywood: Programmer, Website designer</span><button href="/">replay</button></div>'
+                        document.getElementById("game").innerHTML = '<div style="width: 80%; background-color: white; padding: 20px; border: 2px outset black"> <h1>Kua mutu!</h1> <p>I tika '+ percentcorrect +'% o ngā pātai!</p><p>Tāu māka:<strong>'+grade+'</strong></p><span style="font-size: small;">Jen Hay: Director, Concept, Kupu<br>Polly Haywood: Artist<br>Bob Haywood: Programmer, Website designer</span><button href="/">replay</button></div>'
                     }
                 }else{
                     losses += 1
