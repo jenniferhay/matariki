@@ -14,7 +14,6 @@
                 <div style="float: right">
                     <a style="color: black; font-size: 50px; background-color: white" href="helppage.html">?</a>
                 </div>
-                <h1>style="color:white;"Ngā Whetū o Matariki</h1>
                 <img src="images/tupu-a-nuku.png" alt="get_a_better_browser/internet_so_this_image_loads.png" style="width: 60%;" id="starimages">
                 <br>
                 <button id="0" style="background-color: lightgrey;" onclick="select(0)">Tupuānuku</button>
@@ -27,7 +26,7 @@
                 <button id="7" style="background-color: lightgrey;" onclick="select(7)">Matariki</button>
                 <button id="8" style="background-color: lightgrey;" onclick="select(8)">Ururangi</button>
                 <br>
-                <button style="width: 20%;" onclick="submit()" id="confirmbutton">tukuna</button>
+                <button style="width: 20%;" onclick="submit()" id="confirmbutton">tukuna (submit)</button>
 </center>
         </div>
         <script>
@@ -56,7 +55,7 @@
                 correctstar = randomnumber
                 clearButtonColors()
                 document.getElementById("confirmbutton").onclick = function(){submit()}
-                document.getElementById("confirmbutton").innerHTML = "tukuna"
+                document.getElementById("confirmbutton").innerHTML = "tukuna (submit)"
                 onLossScreen = false
                 changeButtonType()
             }
@@ -112,7 +111,7 @@
                     document.getElementById(String(selectedstar)).style.backgroundColor = "red"
                     document.getElementById(String(correctstar)).style.backgroundColor = "lightgreen"
                     document.getElementById("confirmbutton").onclick = function(){next()}
-                    document.getElementById("confirmbutton").innerHTML = "haere tonu"
+                    document.getElementById("confirmbutton").innerHTML = "haere tonu (next)"
                     onLossScreen = true
 
                 }
