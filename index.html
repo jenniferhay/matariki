@@ -14,6 +14,7 @@
                 <div style="float: right">
                     <a style="color: black; font-size: 50px; background-color: white" href="helppage.html">?</a>
                 </div>
+                <h1>style="color:white;"Ngā Whetū o Matariki</h1>
                 <img src="images/tupu-a-nuku.png" alt="get_a_better_browser/internet_so_this_image_loads.png" style="width: 60%;" id="starimages">
                 <br>
                 <button id="0" style="background-color: lightgrey;" onclick="select(0)">Tupuānuku</button>
@@ -64,7 +65,7 @@
                 if (randomnumber == 1) {
                     var counter = 0
                     while (counter != 9) {
-                        document.getElementById(String(counter)).innerHTML = "<img style='height: 50px;' src='" + buttonimgs[counter] + "'>"
+                        document.getElementById(String(counter)).innerHTML = "<img style='height: 45px;' src='" + buttonimgs[counter] + "'>"
                         counter += 1
                     }
                 } else {
@@ -102,7 +103,7 @@
                         }else{
                             grade = '<span style="color:red">Me ako anō.</span>'
                         }
-                        document.getElementById("game").innerHTML = '<div style="width: 80%; background-color: white; padding: 20px; border: 2px outset black"> <h1>Kua mutu!</h1> <p>I tika '+ percentcorrect +'% o ngā pātai!</p><p>Tāu māka:<strong>'+grade+'</strong></p><span style="font-size: small;">Jen Hay: Kaiwhakahaere, Kupu<br>Polly Haywood: Kaiwhakanikoniko<br>Bob Haywood: Taupānga</span><button href="index.html">  Tākaro Anō</button></div>'
+                        document.getElementById("game").innerHTML = '<div style="width: 80%; background-color: white; padding: 20px; border: 2px outset black"> <h1>Kua mutu!</h1> <p>I tika ' + percentcorrect + '% o ngā pātai!</p><p>Tāu māka:<strong>' + grade +'</strong></p><span style="font-size: small;">Jen Hay: Kaiwhakahaere, Kupu<br>Polly Haywood: Kaiwhakanikoniko<br>Bob Haywood: Taupānga</span><button href="https://jenniferhay.github.io/matariki/index.html">  Tākaro Anō</button></div>'
                     }
                 }else{
                     losses += 1
